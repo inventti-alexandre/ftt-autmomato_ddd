@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automato.Application", "Automato.Application.csproj", "{22387A0D-3ED5-4653-A522-2041A78A82E9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automato.Application", "Automato.Application\Automato.Application.csproj", "{22387A0D-3ED5-4653-A522-2041A78A82E9}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Application", "1-Application", "{CA0E04F7-F40D-4F79-AF4C-A8F46EFC2A91}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automato.WindowsFormsApp", "Automato.WindowsFormsApp\Automato.WindowsFormsApp.csproj", "{9415DBD3-9C94-492C-B0C5-2BB641E0BE8F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0-Presentation", "0-Presentation", "{A0624EEE-4A8B-4750-8C20-118BFC973CE4}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0-Presentation", "0-Presentation", "{A52E397D-DF11-45EB-B282-0CF3410B58F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automato.WindowsFormsApp", "..\Automato.WindowsFormsApp\Automato.WindowsFormsApp.csproj", "{9415DBD3-9C94-492C-B0C5-2BB641E0BE8F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Application", "1-Application", "{89C4A5A9-F4AA-4CBC-8749-C3705B071906}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,7 +30,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{22387A0D-3ED5-4653-A522-2041A78A82E9} = {CA0E04F7-F40D-4F79-AF4C-A8F46EFC2A91}
-		{9415DBD3-9C94-492C-B0C5-2BB641E0BE8F} = {A0624EEE-4A8B-4750-8C20-118BFC973CE4}
+		{22387A0D-3ED5-4653-A522-2041A78A82E9} = {89C4A5A9-F4AA-4CBC-8749-C3705B071906}
+		{9415DBD3-9C94-492C-B0C5-2BB641E0BE8F} = {A52E397D-DF11-45EB-B282-0CF3410B58F1}
 	EndGlobalSection
 EndGlobal
