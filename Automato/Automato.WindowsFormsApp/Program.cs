@@ -1,8 +1,6 @@
-﻿using Automato.App.Repositories;
+﻿using Automato.App.Domain.Services;
+using Automato.App.Services;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Automato.WindowsFormsApp
@@ -17,7 +15,11 @@ namespace Automato.WindowsFormsApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1(new AutomataRepository()));
+            Application.Run(new Form1(
+                new AutomataService(),
+                new WordService(),
+                new ResultService())
+            );
         }
     }
 }

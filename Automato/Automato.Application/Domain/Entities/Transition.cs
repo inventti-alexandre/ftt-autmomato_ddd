@@ -1,4 +1,4 @@
-﻿namespace Automato.App.Entities
+﻿namespace Automato.App.Domain.Entities
 {
     public class Transition
     {

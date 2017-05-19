@@ -1,10 +1,9 @@
-﻿using Automato.App.Entities;
-using Automato.App.Validation;
+﻿using Automato.App.Domain.Entities;
+using Automato.App.Domain.Validation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-
-namespace Automato.App.Extensions
+namespace Automato.App.Domain.Extensions
 {
     public static class AutomataExtension
     {

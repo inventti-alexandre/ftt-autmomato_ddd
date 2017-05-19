@@ -1,16 +1,16 @@
-﻿using Automato.App.Validation;
+﻿using Automato.App.Domain.Validation;
 using System;
 using System.Collections.Generic;
 
-namespace Automato.App.Entities
+namespace Automato.App.Domain.Entities
 {
     public class Automata
     {
         #region Properties
         public string Q0 { get; set; }
-        public List<String> States { get; set; }
-        public List<String> Alphabet { get; set; }
-        public List<String> F { get; set; }
+        public List<String> States = new List<String>();
+        public List<String> Alphabet = new List<String>();
+        public List<String> F = new List<String>();
         public List<Transition> Transitions = new List<Transition>();
         #endregion
 
@@ -56,6 +56,11 @@ namespace Automato.App.Entities
         private IEnumerable<Transition> GetAllTransitions(string currentState, string symbol)
         {
             return Transitions.FindAll(t => t.StartState == currentState && t.Symbol == symbol);
+        }
+
+        public bool IsEmpty()
+        {
+            return States.Count == 0;
         }
         #endregion
     }

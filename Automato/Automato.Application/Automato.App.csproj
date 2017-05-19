@@ -43,19 +43,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\Automata.cs" />
-    <Compile Include="Entities\Transition.cs" />
-    <Compile Include="Enumerators\ImportType.cs" />
-    <Compile Include="Extensions\AutomataExtension.cs" />
-    <Compile Include="Extensions\TransitionExtension.cs" />
-    <Compile Include="Interfaces\IAutomataRepository.cs" />
-    <Compile Include="Interfaces\IBaseRepository.cs" />
+    <Compile Include="Domain\Entities\Result.cs" />
+    <Compile Include="Domain\Validation\BaseRepositoryScope.cs" />
+    <Compile Include="Infra\Repositories\ResultRepository.cs" />
+    <Compile Include="Infra\Repositories\WordRepository.cs" />
+    <Compile Include="Services\AutomataService.cs" />
+    <Compile Include="Domain\Entities\Automata.cs" />
+    <Compile Include="Domain\Entities\Transition.cs" />
+    <Compile Include="Domain\Enumerators\ImportType.cs" />
+    <Compile Include="Domain\Extensions\AutomataExtension.cs" />
+    <Compile Include="Domain\Extensions\TransitionExtension.cs" />
+    <Compile Include="Domain\Interfaces\IAutomataRepository.cs" />
+    <Compile Include="Domain\Interfaces\IBaseRepository.cs" />
+    <Compile Include="Domain\Validation\AutomataServiceScope.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\AutomataRepository.cs" />
-    <Compile Include="Repositories\BaseRepository.cs" />
-    <Compile Include="Validation\AssertionConcern.cs" />
-    <Compile Include="Validation\AutomataScope.cs" />
-    <Compile Include="Validation\TransitionScope.cs" />
+    <Compile Include="Infra\Repositories\AutomataRepository.cs" />
+    <Compile Include="Infra\Repositories\BaseRepository.cs" />
+    <Compile Include="Domain\Validation\AssertionConcern.cs" />
+    <Compile Include="Domain\Validation\AutomataScope.cs" />
+    <Compile Include="Domain\Validation\TransitionScope.cs" />
+    <Compile Include="Services\ResultService.cs" />
+    <Compile Include="Services\WordService.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
