@@ -1,8 +1,8 @@
-﻿using Automato.Application.Validation;
+﻿using Automato.App.Validation;
 using System;
 using System.Collections.Generic;
 
-namespace Automato.Application.Entities
+namespace Automato.App.Entities
 {
     public class Automata
     {

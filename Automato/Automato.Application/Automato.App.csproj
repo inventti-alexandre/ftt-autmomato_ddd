@@ -7,8 +7,8 @@
     <ProjectGuid>{22387A0D-3ED5-4653-A522-2041A78A82E9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Automato.Application</RootNamespace>
-    <AssemblyName>Automato.Application</AssemblyName>
+    <RootNamespace>Automato.App</RootNamespace>
+    <AssemblyName>Automato.App</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -29,6 +29,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -42,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Entities\Automata.cs" />
     <Compile Include="Entities\Transition.cs" />
+    <Compile Include="Enumerators\ImportType.cs" />
     <Compile Include="Extensions\AutomataExtension.cs" />
     <Compile Include="Extensions\TransitionExtension.cs" />
     <Compile Include="Interfaces\IAutomataRepository.cs" />

@@ -1,8 +1,8 @@
-﻿using Automato.Application.Entities;
-using Automato.Application.Repositories;
+﻿using Automato.App.Entities;
+using Automato.App.Repositories;
 using System.Collections.Generic;
 
-namespace Automato.Application.Validation
+namespace Automato.App.Validation
 {
     public static class AutomataScope
     {

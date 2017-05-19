@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using Automato.Application.Interfaces;
+using Automato.App.Interfaces;
 
-namespace Automato.Application.Repositories
+namespace Automato.App.Repositories
 {
     public abstract class BaseRepository : IBaseRepository<string>
     {

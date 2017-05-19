@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automato.Application", "Automato.Application\Automato.Application.csproj", "{22387A0D-3ED5-4653-A522-2041A78A82E9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automato.App", "Automato.Application\Automato.App.csproj", "{22387A0D-3ED5-4653-A522-2041A78A82E9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automato.WindowsFormsApp", "Automato.WindowsFormsApp\Automato.WindowsFormsApp.csproj", "{9415DBD3-9C94-492C-B0C5-2BB641E0BE8F}"
 EndProject

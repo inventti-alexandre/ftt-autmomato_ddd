@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Automato.Application.Interfaces
+namespace Automato.App.Interfaces
 {
     public interface IBaseRepository<T> where T : class
     {

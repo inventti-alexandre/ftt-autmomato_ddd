@@ -1,6 +1,6 @@
-﻿using Automato.Application.Entities;
+﻿using Automato.App.Entities;
 
-namespace Automato.Application.Interfaces
+namespace Automato.App.Interfaces
 {
     public interface IAutomataRepository : IBaseRepository<string>
     {

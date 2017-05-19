@@ -1,7 +1,7 @@
-﻿using Automato.Application.Entities;
-using Automato.Application.Validation;
+﻿using Automato.App.Entities;
+using Automato.App.Validation;
 
-namespace Automato.Application.Extensions
+namespace Automato.App.Extensions
 {
     public static class TransitionExtension
     {

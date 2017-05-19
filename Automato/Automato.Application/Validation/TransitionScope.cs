@@ -1,7 +1,7 @@
-﻿using Automato.Application.Entities;
+﻿using Automato.App.Entities;
 using System.Collections.Generic;
 
-namespace Automato.Application.Validation
+namespace Automato.App.Validation
 {
     public static class TransitionScope
     {

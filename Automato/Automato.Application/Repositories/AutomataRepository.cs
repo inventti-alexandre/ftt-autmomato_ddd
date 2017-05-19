@@ -1,16 +1,19 @@
-﻿using Automato.Application.Entities;
-using Automato.Application.Extensions;
-using Automato.Application.Interfaces;
+﻿using Automato.App.Entities;
+using Automato.App.Extensions;
+using Automato.App.Interfaces;
+using Automato.App.Validation;
 using System.Collections.Generic;
 
-namespace Automato.Application.Repositories
+namespace Automato.App.Repositories
 {
     public class AutomataRepository : BaseRepository, IAutomataRepository
     {
         public List<string> FileLines { get; set; }
         public Automata GetAutomataFromFile(string fileName)
         {
-            return new Automata().Parse(ReadFile(fileName));
+            var automata = new Automata().Parse(ReadFile(fileName));
+            automata.RegisterAutomataScopeValidate();
+            return automata;
         }
     }
 }

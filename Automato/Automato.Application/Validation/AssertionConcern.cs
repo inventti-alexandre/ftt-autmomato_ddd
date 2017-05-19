@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Automato.Application.Validation
+namespace Automato.App.Validation
 {
     public static class AssertionConcern
     {
