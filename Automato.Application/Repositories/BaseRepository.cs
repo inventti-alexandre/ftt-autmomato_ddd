@@ -7,18 +7,12 @@ namespace Automato.Application.Repositories
 {
     public abstract class BaseRepository : IBaseRepository<string>
     {
-        public virtual IEnumerable<string> ReadFile(string fileName)
+        public virtual List<string> ReadFile(string fileName)
         {
-            List<string> lines;
-
             if (File.Exists(fileName))
-                lines = File.ReadAllLines(fileName).ToList();
+                return File.ReadAllLines(fileName).ToList();
             else
                 throw new FileNotFoundException(string.Format("Arquivo {0} não encontrado.", fileName));
-
-            if (lines.Any())
-                return lines;
-            throw new FileNotFoundException(string.Format("O arquivo {0} está vazio.", fileName));
         }
     }
 }

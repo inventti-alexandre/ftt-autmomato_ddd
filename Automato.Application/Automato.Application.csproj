@@ -43,12 +43,15 @@
     <Compile Include="Entities\Automata.cs" />
     <Compile Include="Entities\Transition.cs" />
     <Compile Include="Extensions\AutomataExtension.cs" />
-    <Compile Include="Extensions\AutomataRepositoryExtension.cs" />
+    <Compile Include="Extensions\TransitionExtension.cs" />
     <Compile Include="Interfaces\IAutomataRepository.cs" />
     <Compile Include="Interfaces\IBaseRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\AutomataRepository.cs" />
     <Compile Include="Repositories\BaseRepository.cs" />
+    <Compile Include="Validation\AssertionConcern.cs" />
+    <Compile Include="Validation\AutomataScope.cs" />
+    <Compile Include="Validation\TransitionScope.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

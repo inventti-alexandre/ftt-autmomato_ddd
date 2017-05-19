@@ -1,93 +1,26 @@
-﻿using Automato.Application.Extensions;
+﻿using Automato.Application.Validation;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace Automato.Application.Entities
 {
     public class Automata
     {
-        #region Atributes/Fields
-        private String _q0;
-        private List<String> _states;
-        private List<String> _f;
-        private List<String> _alphabet;
-        private List<Transition> Transitions = new List<Transition>();
-        #endregion
-
         #region Properties
-
-        public string Q0
-        {
-            get
-            {
-                return _q0;
-            }
-            set
-            {
-                _q0 = value;
-                this.IsValidQ0State("O estado inicial informado para o automato não é válido.");
-            }
-        }
-
-        public List<String> States
-        {
-            get
-            {
-                return _states ?? new List<String>();
-            }
-            private set
-            {
-                _states = value;
-                this.IsValidStates("Você deve informar no mínimo um estado para o automato.");
-            }
-        }
-
-        public List<String> Alphabet
-        {
-            get
-            {
-                return _alphabet ?? new List<String>();
-            }
-            private set
-            {
-                _alphabet = value;
-                this.IsValidAlphabet("O alfabeto informado deve conter no mínimo um símbolo.");
-            }
-        }
-
-        public List<String> F
-        {
-            get
-            {
-                return _f ?? new List<String>();
-            }
-            private set
-            {
-                _f = value;
-                this.IsValidEndState("O conjunto de estados finais informado para o automato nõ é válido.");
-
-            }
-        }
+        public string Q0 { get; set; }
+        public List<String> States { get; set; }
+        public List<String> Alphabet { get; set; }
+        public List<String> F { get; set; }
+        public List<Transition> Transitions = new List<Transition>();
         #endregion
 
         #region Constructors
-        public Automata(IEnumerable<String> states,
-                        IEnumerable<String> alphabet,
-                        String q0,
-                        IEnumerable<String> f)
-        {
-            States = states.Select(this.StateFormat).ToList();
-            Alphabet = alphabet.Select(this.SymbolFormat).ToList();
-            Q0 = this.StateFormat(q0);
-            F = f.Select(this.StateFormat).ToList();
-        }
         #endregion
 
         #region Methods
         public void AddTransition(Transition transition)
         {
-            this.IsValidTransition(transition, "A função de transição informada não é válida.");
+            transition.RegisterTransitionDataScopeValidate(States, Alphabet);
             Transitions.Add(transition);
         }
 
